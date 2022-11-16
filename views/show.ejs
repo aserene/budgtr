@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <%- include("./partials/head.ejs") %>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%=budget.name%></title>
+    <title><%=entry.name%></title>
 </head>
 <body>
     <div class="container">
-      <h1><%=budget[req.params.id]%></h1>
+      <h1><%=entry.name%></h1>
+      <h3>Date</h3>
+      <p><%=entry.date%></p>
+      <h3>From</h3>
+      <p><%=entry.from%></p>
+      <h3>Amount</h3>
+      <p><%=entry.amount%></p>
+      <h3>Tags</h3>
+      <p><%=entry.tags%></p>
     </div>
+    <br>
+    <a href="/budget"><button class="return">Return to Budget</button></a>
 </body>
 </html>

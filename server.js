@@ -8,9 +8,12 @@ app.get("/", (req, res) => res.redirect("/budget"))
 app.get("/budget",(req, res)=>{
     res.render("index.ejs", {budget})
 })
+app.get("/budget/new", (req, res)=> {
+    res.render("new.ejs")
+})
 app.get("/budget/:id", (req, res)=> {
     res.render("show.ejs", {
-        budget: budget[req.params.id],
+        entry: budget[req.params.id],
         index: req.params.id
     });
 })

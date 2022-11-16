@@ -1,2 +1,14 @@
-https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css,
-https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css
+body {
+    background-color: rgb(26, 26, 26);
+    color: white
+}
+button {
+    border-radius: 10px;
+    padding: 10px;
+    transition:0.5s;
+}
+button:hover {
+    background-color: rgb(119, 119, 119);
+    color: white;
+    border-color: white
+}
